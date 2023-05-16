@@ -26,11 +26,11 @@ Step 6: Display message give in MainActivity file(client/server).
 Step 7: Save and run the application.
 
 ## PROGRAM:
-
+```
 Program to print the client/server services using AIDL”.
 Developed by:D.Amarnath Reddy
 Registeration Number :2122212400512
-
+```
 ## MainActivity.java:
 ~~~
 package com.example.aidlapp88;
