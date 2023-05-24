@@ -1,9 +1,9 @@
-# Ex.No:5 Develop a simple application for proximity sensor using Sensor Manager in android studio.
+# Ex.No:4 Develop a simple application to display the avaliable sensor in android mobile devices using Sensor Manager in android studio.
 
 
 ## AIM:
 
-To develop a sensor application for proximity sensor using sensor manager in Android Studio.
+To develop a sensor application to use the sensor manager class to identify and get the list of available sensors on a device. in Android Studio.
 
 ## EQUIPMENTS REQUIRED:
 
@@ -13,7 +13,7 @@ Android Studio(Min.required Artic Fox)
 
 Step 1: Open Android Stdio and then click on File -> New -> New project.
 
-Step 2: Then type the Application name as proximitysensor and click Next. 
+Step 2: Then type the Application name as Sensor and click Next. 
 
 Step 3: Then select the Minimum SDK as shown below and click Next.
 
@@ -21,17 +21,17 @@ Step 4: Then select the Empty Activity and click Next. Finally click Finish.
 
 Step 5: Design layout in activity_main.xml.
 
-Step 6: Display process of proximitysensor in android mobile devices.
+Step 6: Display avaliable sensor in android mobile devices.
 
 Step 7: Save and run the application.
 
 ## PROGRAM:
 ```
-Program to print the process of proximitysensor in android mobile devices”.
-Developed by:D>Amarnath Reddy
+Program to print the avaliable sensor in android mobile devices”.
+Developed by:D.Amarnath REddy
 Registeration Number :212221240012
 ```
-## MainActivity.java
+## MainActivity.java:
 ~~~
 package com.example.sensors;
 
@@ -44,23 +44,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    SensorManager mgr;
-    TextView txtList;
+    private SensorManager mgr;
+    private TextView txtList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mgr = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
-        txtList = (TextView)findViewById(R.id.sensorList);
-        List<Sensor> sensorsList = mgr.getSensorList(Sensor.TYPE_ALL);
+        txtList = (TextView)findViewById(R.id.sensorslist);
+        List<Sensor> sensorList = mgr.getSensorList(Sensor.TYPE_ALL);
         StringBuilder strBuilder = new StringBuilder();
-        for(Sensor s: sensorsList){
+        for(Sensor s: sensorList){
             strBuilder.append(s.getName()+"\n");
         }
         txtList.setVisibility(View.VISIBLE);
@@ -68,32 +66,32 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ~~~
-## activity_main.xml
+## activity_main.xml:
 ~~~
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
     <TextView
-        android:id="@+id/sensorList"
+        android:id="@+id/sensorslist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginTop="80dp"
+        android:text="Sensors"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>
 ~~~
+## OUTPUT:
+![image](https://user-images.githubusercontent.com/93427224/236433297-6e50b7cf-6696-440b-83d9-611ebb5f1c96.png)
 
-## OUTPUT
-![image](https://github.com/suryacse05/Advance-Android-Odd-/assets/94165103/53727f3c-2e7f-4ce2-84c1-0df9a1590d68)
-![image](https://github.com/suryacse05/Advance-Android-Odd-/assets/94165103/39cad693-5ab2-4258-81a4-a2f872a69f3e)
+
+
 
 
 ## RESULT
-Thus a Simple Android Application to display the details of proximity sensor using sensor manager in Android Studio is developed and executed successfully.
+Thus a Simple Android Application to display the avaliable sensor in android mobile devices using Sensor Manager in Android Studio is developed and executed successfully.
