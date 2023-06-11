@@ -240,5 +240,7 @@ public class DataBaseManager {
 <img width="569" alt="image" src="https://github.com/Dhanireddy-Amarnthreddy/Advance-Android-Odd-/assets/94165103/68c796fd-f72e-43b0-a732-3584a9aa6922">
 <img width="560" alt="image" src="https://github.com/Dhanireddy-Amarnthreddy/Advance-Android-Odd-/assets/94165103/78c15836-a9ba-4693-8878-27877c346c86">
 <img width="170" alt="image" src="https://github.com/Dhanireddy-Amarnthreddy/Advance-Android-Odd-/assets/94165103/372b694f-dd21-4826-840a-68019916a8f2">
+
 ## RESULT
+
 Thus a Simple Android Application create a dtatabase table and to display the database table  using SQLite Database in Android Studio is developed and executed successfully.
