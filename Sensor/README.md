@@ -87,7 +87,8 @@ public class MainActivity extends AppCompatActivity {
 </LinearLayout>
 ~~~
 ## OUTPUT:
-![image](https://user-images.githubusercontent.com/93427224/236433297-6e50b7cf-6696-440b-83d9-611ebb5f1c96.png)
+![image](https://github.com/Dhanireddy-Amarnthreddy/Advance-Android-Odd-/assets/94165103/a16fd2e6-3714-411e-87de-d0d70af0198d)
+![image](https://github.com/Dhanireddy-Amarnthreddy/Advance-Android-Odd-/assets/94165103/114c6981-14eb-4715-bf30-724fa9656bc4)
 
 
 
